@@ -5,6 +5,7 @@ import { TRPCError } from '@trpc/server';
 
 export const appRouter = createTRPCRouter({
   testAi: baseProcedure.mutation(async () => {
+    
     try {
       await inngest.send({
         name : "execute/ai"},
